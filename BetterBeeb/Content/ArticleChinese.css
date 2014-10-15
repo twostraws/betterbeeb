@@ -1,0 +1,16 @@
+html {
+	font-family: 'Heiti SC';
+	letter-spacing: 2px;
+}
+
+h1,
+p,
+footer {
+	font-weight: normal;
+}
+
+.updated,
+footer {
+	font-family: Helvetica, Arial;
+    letter-spacing: 0;
+}

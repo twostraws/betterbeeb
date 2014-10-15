@@ -1,0 +1,108 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+#content {
+    padding: 8px;
+    margin: 0 auto;
+}
+
+.rtl {
+    direction:rtl;
+}
+img {
+    display: block;
+    background-color: #e6e7e8;
+    padding: 0;
+    margin: 0;
+}
+.fullwidth_img,
+.inline_img {
+    position: relative;
+}
+.fullwidth_img {
+    margin-bottom: 1.3rem;
+    border-bottom: 1px solid #c4c4c4;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -webkitTouchCallout: none;    
+}
+.fullwidth_img:first-of-type {
+    border-bottom: none;
+}
+.inline_img {
+    float: right;
+    margin: 0.8rem 0 0.8rem 0.8rem;
+}
+.rtl .inline_img {
+    float: left;
+    margin: 0.8rem 0.8rem 0.8rem 0;
+}
+.fullwidth_img,
+.inline_img {
+    display: block;
+    clear: both;
+/*
+    Causing some issues and byproducts that require performance hit. Disabling.
+    display: none; /* as part of NEWSAPPS-368 */
+*/
+}
+.inline_img + .bbc-caption {
+    float: right;
+    clear: right;
+}
+.rtl .inline_img + .bbc-caption {
+    float: left;
+    clear: left;
+}
+.inline_img_caption {
+    border-bottom: 1px solid #c4c4c4;
+}
+.playVideoIcon, .playAudioIcon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: 91px 91px;
+    background-repeat: no-repeat;
+    border: 0;
+    opacity: 0.9;
+}
+
+.inline_img .playVideoIcon,
+.inline_img .playAudioIcon {
+    background-size: 44px 44px;
+}
+
+/* Retina or not */
+@media only screen and (-webkit-device-pixel-ratio: 1) {
+    .playVideoIcon {
+        background-image:url(overlay_video.png);
+    }
+    .playVideoOverIcon {
+        background-image:url(overlay_video_touch.png);
+    }
+    .playAudioIcon {
+        background-image:url(overlay_audio.png);
+    }
+    .playAudioOverIcon {
+        background-image:url(overlay_audio_touch.png);
+    }
+}
+@media only screen and (-webkit-device-pixel-ratio: 2) {
+    .playVideoIcon {
+        background-image:url(overlay_video@2x.png);
+    }
+    .playVideoOverIcon {
+        background-image:url(overlay_video_touch@2x.png);
+    }    
+    .playAudioIcon {
+        background-image:url(overlay_audio@2x.png);
+    }
+    .playAudioOverIcon {
+        background-image:url(overlay_audio_touch@2x.png);
+    }
+}

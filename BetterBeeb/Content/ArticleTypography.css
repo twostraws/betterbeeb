@@ -1,0 +1,83 @@
+html {
+    font-size: 62.5%; /* 10px */
+    color: #404040;
+    font-family: Helvetica, Arial;
+}
+#content {
+    word-wrap: break-word;
+    font-size: 1.6rem;
+}
+/* Font size scaling based on user prefs */
+.BNArticleTextSizeXXS {
+    -webkit-text-size-adjust: 70%;
+}
+.BNArticleTextSizeXS {
+    -webkit-text-size-adjust: 80%;
+}
+.BNArticleTextSizeS {
+    -webkit-text-size-adjust: 90%;
+}
+.BNArticleTextSizeM {
+    -webkit-text-size-adjust: 100%;
+}
+.BNArticleTextSizeL {
+    -webkit-text-size-adjust: 115%;
+}
+.BNArticleTextSizeXL {
+    -webkit-text-size-adjust: 130%;
+}
+h1,h2,h3,h4,h5,h6 {
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+}
+h1 {
+    margin: 0 0 0.5rem;
+    font-size: 3.2rem;
+    font-weight: bold;
+    letter-spacing: -0.1rem;
+}
+p {
+    margin: 0 0 1.6rem;
+}
+p.updated {
+    font-size: 1.4rem;
+    font-style: italic;
+    color: #6daa17;
+    margin-bottom: 0.9rem;
+}
+p.name,
+p.role,
+p.author,
+p.description,
+p.updated .updated-absolute {
+    color: #898989;
+}
+p.subtitle,
+p.name,
+p.role,
+p.author,
+p.description {
+    margin-bottom: 0.8rem;
+}
+p.crosshead,
+p.subtitle {
+    font-size: 2.0rem;
+    font-weight: bold;
+    padding-top: 1.8rem;
+}
+p.credits {
+    font-size: 1.4rem;
+}
+.fullwidth_img_caption,
+.inline_img_caption,
+.bbc-caption {
+    padding-top: 0.7rem;
+    padding-bottom: 0.9rem;
+    font-size: 1.3rem;
+    color: #777;
+}
+footer {
+    font-size: 1.4rem;
+    font-weight: bold;
+}

@@ -1,0 +1,72 @@
+.playVideoIcon, .playAudioIcon {
+    background-position: 0 44px;
+}
+
+.inline_img .playVideoIcon,
+.inline_img .playAudioIcon {
+    background-position: 1px 31px;
+}
+
+.inline_img,
+.inline_img img,
+.inline_img + .bbc-caption {
+	width: 144px;
+}
+/* Portrait: NB: 419 is up from 320 to handle 6 Plus */
+@media all and (max-width: 419px) {
+/* Image logic */
+    .fullwidth_img,
+    .fullwidth_img img,
+    .fullwidth_img + .bbc-caption {
+        width: calc(100% + 8px);
+    }
+
+    .fullwidth_img {
+        margin-left: -8px;
+    }
+    .fullwidth_img_caption {
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+    }
+    .fullwidth_img .has-avcontent img {
+        min-height: 180px;
+    }
+    .blank-img {
+        width: 320px;
+        height: 180px;
+    }
+}
+/* Landscape mode */
+@media all and (min-width: 480px) {
+    /* Image logic */
+    .fullwidth_img,
+    .fullwidth_img img,
+    .fullwidth_img + .bbc-caption {
+        width: 100%
+    }
+
+    .fullwidth_img {
+        margin: 1.6rem 0 0.8rem;
+        min-height:105.61px;
+
+    }
+    .fullwidth_img:first-of-type {
+        float: right;
+        width: 188px;
+        margin: 0.8rem 0 0.8rem 0.8rem;
+    }
+    .fullwidth_img:first-of-type img {
+        width: 188px;
+    }
+    .fullwidth_img .has-avcontent img {
+        min-height:105.61px;
+    }
+    .playVideoIcon, .playAudioIcon {
+        background-size: 44px 44px;
+        background-position: 0 31px;
+	}
+    .blank-img {
+        width: 188px;
+        height: 106px;
+    }
+}

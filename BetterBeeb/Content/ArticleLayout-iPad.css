@@ -1,0 +1,67 @@
+/* Image logic */
+.fullwidth_img,
+.fullwidth_img img,
+.fullwidth_img + .bbc-caption {
+    width: 480px;
+}
+
+.playVideoIcon, .playAudioIcon {
+    background-position: 1px 82px;
+}
+
+.inline_img .playVideoIcon,
+.inline_img .playAudioIcon {
+    background-position: 1px 44px;
+}
+
+.inline_img,
+.inline_img img,
+.inline_img + .bbc-caption {
+	width: 240px;
+}
+
+/* Portrait mode */
+@media all and (min-width: 768px) {
+    #content {
+        padding: 16px 80px;
+    }
+    .blank-img {
+        width: 480px;
+        height: 270px;
+    }
+    .fullwidth_img .has-avcontent img {
+        min-height: 269.66px;
+    }
+}
+/* Landscape */
+@media all and (max-width: 516px) {
+    #content {
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+    .fullwidth_img {
+        margin: 1.6rem 0 0.8rem;
+    }
+    .fullwidth_img:first-of-type {
+        float: right;
+        width: 240px;
+        margin: 0.8rem 0 0.8rem 0.8rem;
+    }
+    .fullwidth_img:first-of-type img {
+        width: 240px;
+    }
+    .fullwidth_img .has-avcontent img {
+        min-height: 134.83px;
+    }    
+    .playVideoIcon, .playAudioIcon {
+        background-size: 44px 44px;
+        background-position: 1px 44px;
+    }
+    .blank-img {
+        width: 240px;
+        height: 135px;
+    }
+}
+
+
+
