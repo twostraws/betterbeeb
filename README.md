@@ -43,3 +43,17 @@ In terms of how close it is to the existing app, there are a few areas of notabl
 
 
 So, that's it from me. To summarise, I'm not trying to replace the BBC News app, I'm not trying to pass myself off as part of the BBC, and I hope I'm not treading on any toes. Indeed, for all I know there could be a BBC News app update out in just a few days that does all this and much more – and I would welcome it greatly!
+
+
+Want to learn Swift?
+--------------------
+
+If you're interested in learning Swift, I've written a few things you might enjoy:
+
+- [Lots of free Swift tutorials that teach iOS coding](https://www.hackingwithswift.com)
+- [Learn what's new in Swift 2.0](https://www.hackingwithswift.com/swift2)
+- [Learn what's new in Swift 2.2](https://www.hackingwithswift.com/swift2-2)
+- [Here are all my free iOS 9 tutorials](https://www.hackingwithswift.com/ios9)
+- [There's a ton of free Swift example code here](https://www.hackingwithswift.com/example-code)
+
+You might also enjoy my [free React JS tutorial, Hacking with React](http://www.hackingwithreact.com), or my [free PHP tutorials, Hacking with PHP](http://www.hackingwithphp.com).
